@@ -1,0 +1,176 @@
+@media screen and (min-width: 650px) {
+    .app-bar {
+      grid-template-columns: 1fr auto;
+      padding: 8px 32px;
+    }
+  
+    .app-bar .app-bar__brand h1 {
+      font-size: 1.5em;
+    }
+  
+    .app-bar .app-bar__menu {
+      display: none;
+    }
+  
+    .app-bar .app-bar__navigation {
+      position: static;
+      width: 100%;
+    }
+  
+    .app-bar .app-bar__navigation ul li {
+      display: inline-block;
+    }
+  
+    .app-bar .app-bar__navigation ul li a {
+      display: inline-block;
+      width: 120px;
+      text-align: center;
+      margin: 0;
+    }
+}
+  
+  @media screen and (max-width: 650px) {
+    .app-bar__menu {
+      order: 2;
+      margin-left: 75%;
+      margin-right: 10px;
+      z-index: 999999999;
+    }
+  
+    .app-bar .app-bar__brand {
+      order: 1;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+      font-size: 2em;
+    }
+  }
+
+  @media only screen and (min-width: 295px) {
+    
+    .resto-item-img{
+      width: 180px;
+      height: 130px;
+      border-radius: 10px;
+    }
+  
+  }
+
+  @media only screen and (min-width: 352px) {
+    
+    .resto-item-img{
+      width: 230px;
+      height: 150px;
+      border-radius: 10px;
+    }
+  
+  }
+
+  @media only screen and (min-width: 437px) {
+    
+    .resto-item-img{
+      width: 290px;
+      height: 200px;
+      border-radius: 10px;
+    }
+  
+  }
+
+  @media only screen and (min-width: 480px) {
+    .restos {
+      grid-template-columns: 450px;
+    }
+
+    .resto-menu{
+      grid-template-columns: 400px;
+    }
+
+    .resto-review{
+      padding: 20px;
+    }
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    .restos {
+      grid-template-columns: 400px 400px;
+    }
+    .resto-review{
+      grid-template-columns: 700px
+    }
+
+    .resto-menu{
+      grid-template-columns: repeat(2, 350px);
+    }
+
+    .skeleton-item{
+      width: 400px;
+      height: 428.8px;
+    }
+  }
+
+  @media only screen and (min-width: 1300px) {
+    .resto-item-img{
+      width: 200px;
+      height: 150px;
+      border-radius: 10px;
+    }
+
+    .skeleton-item{
+      width: 300px;
+      height: 435.6px;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .resto-detail{
+      text-align: center;
+      margin-top: -5px;
+    }
+    .resto-detail-description{
+      text-align: justify;
+    }
+  
+  }
+
+
+  @media only screen and (min-width: 1100px) {
+
+    .resto-detail{
+      grid-template-columns: repeat(2, 500px);
+    }
+
+    .resto-menu{
+      grid-template-columns: repeat(2, 500px);
+    }
+
+    .resto-review{
+      grid-template-columns: 800px
+    }
+    
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .resto-detail-img img{
+      margin-top: 100px;
+    }
+  }
+
+  @media only screen and (min-width: 1300px) {
+    .restos {
+      grid-template-columns: 300px 300px 300px 300px;
+    }
+    .resto-detail{
+      grid-template-columns: repeat(2, 600px);
+    }
+
+    .resto-menu{
+      grid-template-columns: repeat(2, 500px);
+    }
+
+    .resto-review{
+      grid-template-columns: 1000px
+    }
+  }
